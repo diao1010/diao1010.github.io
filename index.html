@@ -9,18 +9,18 @@
   <body>
     <div id="vis"></div>
     <script type="text/javascript">
-      var yourVlSpec = {
+      var myVl = {
            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
            "data": {"url": "building_inventory.csv"},
            "format": {"type": "csv", "parse": "auto"},
            "mark": "bar",
            "encoding": {
-               "x": {"field": "Congress Dist", "type": "quantitative", "bin": true},
+               "x": {"field": "Congress Dist", "type": "quantitative", "bin": true, "interval": 1},
                "y": {"aggregate": "count", "type": "quantitative"}
            }
         
       };
-      vegaEmbed('#vis', yourVlSpec);
+      vegaEmbed('#vis', myVl);
     </script>
   </body>
 </html>
