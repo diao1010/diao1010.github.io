@@ -11,7 +11,7 @@
 
     <script type="text/javascript">
       var yourVlSpec = {
-        {
+        
            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
            "data": {"url": "data/movies.json"},
            "mark": "bar",
@@ -20,7 +20,7 @@
                "y": {"aggregate": "count", "type": "quantitative"},
                "color": {"aggregate": "sum", "field": "Production Budget","scale": {"type": "log"}}
            }
-        }
+        
       };
       vegaEmbed('#vis', yourVlSpec);
     </script>
