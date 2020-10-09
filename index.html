@@ -13,7 +13,8 @@
       var yourVlSpec = {
         
            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-           "data": {"url": "data/movies.json"},
+           "data": {"url": "building_inventory.csv"},
+           "format": {"type": "csv", "parse": "auto"},
            "mark": "bar",
            "encoding": {
                "x": {"field": "IMDB Rating", "type": "quantitative", "bin": true},
